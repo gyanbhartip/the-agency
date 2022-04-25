@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/Login.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const handleSubmit = (e) => {
@@ -32,6 +33,8 @@ const Login = () => {
         <button type="submit" className="submitBtn">
           Login
         </button>
+        <Link to="/register">I'm a new user</Link>
+        <Link to="/forgot">I forgot my password</Link>
       </form>
     </section>
   );

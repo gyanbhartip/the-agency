@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const handleSubmit = (e) => {
@@ -79,6 +80,7 @@ const Register = () => {
         <button type="submit" className="submitBtn">
           Sign Up
         </button>
+        <Link to="/login">I'm a returning user</Link>
       </form>
     </section>
   );

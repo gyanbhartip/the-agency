@@ -1,19 +1,15 @@
 import "../../styles/App.css";
-import { Outlet } from "react-router-dom";
-import ForgotPassword from "../forgotPassword/ForgotPassword";
-import Login from "../login/Login";
 import Navbar from "../navbar/Navbar";
-import Register from "../register/Register";
+import Home from "../home/Home";
+import Footer from "../footer/Footer";
 
 function App() {
   return (
-    <>
+    <div className="app-container">
       <Navbar />
-      <Outlet />
-      {/* <Login /> */}
-      {/* <Register /> */}
-      {/* <ForgotPassword /> */}
-    </>
+      <Home />
+      <Footer />
+    </div>
   );
 }
 

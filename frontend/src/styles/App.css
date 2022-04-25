@@ -4,3 +4,8 @@
   --light-grey: #e6efff;
   --dark-grey: #6c7698;
 }
+
+.app-container {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+}

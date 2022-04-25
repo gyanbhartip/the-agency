@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ForgotPassword = () => {
   const handleSubmit = (e) => {
@@ -54,6 +55,7 @@ const ForgotPassword = () => {
         <button type="submit" className="submitBtn">
           Get Password
         </button>
+        <Link to="/login">Back to Login</Link>
       </form>
     </section>
   );
