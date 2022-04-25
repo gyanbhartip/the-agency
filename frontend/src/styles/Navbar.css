@@ -1,0 +1,24 @@
+.nav-wrapper {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  background-color: rgb(137, 63, 63);
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.right {
+  width: 50vw;
+  display: flex;
+  gap: 5vw;
+}
+
+.nav-item {
+  font-size: 1.5rem;
+  color: aliceblue;
+}

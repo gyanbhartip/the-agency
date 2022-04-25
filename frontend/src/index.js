@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import { store } from "./redux/store/store";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from './components/app/App';
+import Login from './components/login/Login';
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,7 +14,9 @@ root.render(
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<App />}></Route>
+          <Route path="/" element={<App />}>
+            <Route path="login" element={<Login />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </Provider>
