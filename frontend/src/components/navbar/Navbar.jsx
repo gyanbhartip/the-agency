@@ -7,12 +7,12 @@ const Navbar = () => {
     <header>
       <nav>
         <div className="nav-wrapper">
-          <a href="#" className="brand-logo">
+          <a href="/" className="brand-logo">
             The Agency
           </a>
           <ul className="right">
             <li>
-              <Link to="home" className="nav-item">
+              <Link to="/" className="nav-item">
                 Home
               </Link>
             </li>

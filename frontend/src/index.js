@@ -6,6 +6,10 @@ import { store } from "./redux/store/store";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from './components/app/App';
 import Login from './components/login/Login';
+import Register from './components/register/Register';
+import ForgotPassword from './components/forgotPassword/ForgotPassword';
+import About from './components/about/About';
+import Home from './components/home/Home';
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,7 +19,11 @@ root.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />}>
+            <Route path="home" element={<Home />} />
             <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
+            <Route path="forgot" element={<ForgotPassword />} />
+            <Route path="about" element={<About />} />
           </Route>
         </Routes>
       </BrowserRouter>
